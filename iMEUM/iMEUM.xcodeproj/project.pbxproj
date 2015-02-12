@@ -14,6 +14,9 @@
 		1EB142441A8B3ACC000B3FA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB142431A8B3ACC000B3FA9 /* Images.xcassets */; };
 		1EB142471A8B3ACC000B3FA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB142451A8B3ACC000B3FA9 /* LaunchScreen.xib */; };
 		1EB142531A8B3ACC000B3FA9 /* iMEUMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB142521A8B3ACC000B3FA9 /* iMEUMTests.m */; };
+		1EDBD1001A8CAAA900DB5FDB /* BAENTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBD0FD1A8CAAA900DB5FDB /* BAENTabItem.m */; };
+		1EDBD1011A8CAAA900DB5FDB /* BAENTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBD0FF1A8CAAA900DB5FDB /* BAENTabView.m */; };
+		1EDBD1051A8CABD600DB5FDB /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EDBD1041A8CABD600DB5FDB /* Phone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		1EB1424C1A8B3ACC000B3FA9 /* iMEUMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMEUMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB142511A8B3ACC000B3FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EB142521A8B3ACC000B3FA9 /* iMEUMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMEUMTests.m; sourceTree = "<group>"; };
+		1EDBD0FC1A8CAAA900DB5FDB /* BAENTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAENTabItem.h; sourceTree = "<group>"; };
+		1EDBD0FD1A8CAAA900DB5FDB /* BAENTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAENTabItem.m; sourceTree = "<group>"; };
+		1EDBD0FE1A8CAAA900DB5FDB /* BAENTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAENTabView.h; sourceTree = "<group>"; };
+		1EDBD0FF1A8CAAA900DB5FDB /* BAENTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAENTabView.m; sourceTree = "<group>"; };
+		1EDBD1041A8CABD600DB5FDB /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 		1EB142351A8B3ACC000B3FA9 /* iMEUM */ = {
 			isa = PBXGroup;
 			children = (
+				1EDBD1021A8CABD600DB5FDB /* Resources */,
+				1EDBD0FA1A8CAA9300DB5FDB /* LoiLib */,
 				1EB1423A1A8B3ACC000B3FA9 /* AppDelegate.h */,
 				1EB1423B1A8B3ACC000B3FA9 /* AppDelegate.m */,
 				1EB1423D1A8B3ACC000B3FA9 /* ViewController.h */,
@@ -117,6 +127,41 @@
 				1EB142511A8B3ACC000B3FA9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EDBD0FA1A8CAA9300DB5FDB /* LoiLib */ = {
+			isa = PBXGroup;
+			children = (
+				1EDBD0FB1A8CAAA900DB5FDB /* Tabs */,
+			);
+			path = LoiLib;
+			sourceTree = "<group>";
+		};
+		1EDBD0FB1A8CAAA900DB5FDB /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				1EDBD0FC1A8CAAA900DB5FDB /* BAENTabItem.h */,
+				1EDBD0FD1A8CAAA900DB5FDB /* BAENTabItem.m */,
+				1EDBD0FE1A8CAAA900DB5FDB /* BAENTabView.h */,
+				1EDBD0FF1A8CAAA900DB5FDB /* BAENTabView.m */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		1EDBD1021A8CABD600DB5FDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EDBD1031A8CABD600DB5FDB /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1EDBD1031A8CABD600DB5FDB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1EDBD1041A8CABD600DB5FDB /* Phone.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +246,7 @@
 			files = (
 				1EB142421A8B3ACC000B3FA9 /* Main.storyboard in Resources */,
 				1EB142471A8B3ACC000B3FA9 /* LaunchScreen.xib in Resources */,
+				1EDBD1051A8CABD600DB5FDB /* Phone.png in Resources */,
 				1EB142441A8B3ACC000B3FA9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDBD1001A8CAAA900DB5FDB /* BAENTabItem.m in Sources */,
 				1EB1423F1A8B3ACC000B3FA9 /* ViewController.m in Sources */,
+				1EDBD1011A8CAAA900DB5FDB /* BAENTabView.m in Sources */,
 				1EB1423C1A8B3ACC000B3FA9 /* AppDelegate.m in Sources */,
 				1EB142391A8B3ACC000B3FA9 /* main.m in Sources */,
 			);
@@ -412,6 +460,7 @@
 				1EB142581A8B3ACC000B3FA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EB142591A8B3ACC000B3FA9 /* Build configuration list for PBXNativeTarget "iMEUMTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +469,7 @@
 				1EB1425B1A8B3ACC000B3FA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

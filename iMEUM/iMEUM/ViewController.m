@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "BAENTabView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) IBOutlet BAENTabView* tabViewMenu;
 
 @end
 
@@ -16,7 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    BAENTabItem * horseforsale = [BAENTabItem createButtonItemWithImage:[UIImage imageNamed:@"Phone"] target:self selector:@selector(Tab:)];
+    BAENTabItem * horseproperties = [BAENTabItem createButtonItemWithImage:[UIImage imageNamed:@"Phone"] target:self selector:@selector(Tab:)];
+    BAENTabItem * business = [BAENTabItem createButtonItemWithImage:[UIImage imageNamed:@"Phone"] target:self selector:@selector(Tab:)];
+    BAENTabItem * events = [BAENTabItem createButtonItemWithImage:[UIImage imageNamed:@"Phone"] target:self selector:@selector(Tab:)];
+    
+    self.tabViewMenu.horizontalInsets = HorizontalEdgeInsetsMake(25, 25);
+    self.tabViewMenu.drawSeparators = YES;
+    self.tabViewMenu.darkensBackgroundForEnabledTabs = NO;
+    [self.tabViewMenu setTabItems:@[horseforsale,horseproperties,business,events]];
+}
+
+- (void)Tab:(id)sender
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {
