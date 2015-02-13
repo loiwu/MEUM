@@ -44,8 +44,8 @@ typedef enum {
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == TableViewRowTest1) {
-        cell.textLabel.text = NSLocalizedString(@"C Test 1", nil);
-        //cell.imageView.image = [UIImage imageNamed:@"facebook"];
+        cell.textLabel.text = NSLocalizedString(@"弦截法求方程根", nil);
+        cell.imageView.image = [UIImage imageNamed:@"doc"];
     }
 }
 
