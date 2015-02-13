@@ -170,7 +170,7 @@
 }
 
 - (int)indexOfTab:(BAENTabItem *)tabItem {
-    return [self.tabItems indexOfObject:tabItem];
+    return (int)[self.tabItems indexOfObject:tabItem];
 }
 
 - (BAENTabItem *)tabItemForTab:(UIControl *)tab {
@@ -200,7 +200,7 @@
         titleLabel.numberOfLines = 2;
         titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         titleLabel.textAlignment = NSTextAlignmentCenter;
-        titleLabel.adjustsLetterSpacingToFitWidth = YES;
+//        titleLabel.adjustsLetterSpacingToFitWidth = YES;
         titleLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth;
         
         UIFont *font = nil;
@@ -219,7 +219,6 @@
         }
         titleLabel.textColor = textColor;
         
-        titleSize = [tabItem.titleString sizeWithFont:titleLabel.font constrainedToSize:CGSizeMake(tab.bounds.size.width, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
         titleLabel.text = tabItem.titleString;
     }
     
