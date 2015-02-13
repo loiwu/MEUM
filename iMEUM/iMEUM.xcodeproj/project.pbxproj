@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4951B91A8DCCE600AA73CD /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951B41A8DCCE600AA73CD /* RECommonFunctions.m */; };
+		1E4951BA1A8DCCE600AA73CD /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951B61A8DCCE600AA73CD /* RESideMenu.m */; };
+		1E4951BB1A8DCCE600AA73CD /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951B81A8DCCE600AA73CD /* UIViewController+RESideMenu.m */; };
+		1E4951BD1A8DCEB000AA73CD /* LeftMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4951BC1A8DCEB000AA73CD /* LeftMenu.png */; };
+		1E4951C11A8DCF3700AA73CD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951C01A8DCF3700AA73CD /* FirstViewController.m */; };
+		1E4951C41A8DCFA100AA73CD /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951C31A8DCFA100AA73CD /* LeftMenuViewController.m */; };
+		1E4951C71A8DD0D600AA73CD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951C61A8DD0D600AA73CD /* SecondViewController.m */; };
+		1E4951CA1A8DD15C00AA73CD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951C91A8DD15C00AA73CD /* RootViewController.m */; };
+		1E4951CC1A8DD56400AA73CD /* RightMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4951CB1A8DD56400AA73CD /* RightMenu.png */; };
+		1E4951CF1A8DD60500AA73CD /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951CE1A8DD60500AA73CD /* RightMenuViewController.m */; };
 		1EB142391A8B3ACC000B3FA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB142381A8B3ACC000B3FA9 /* main.m */; };
 		1EB1423C1A8B3ACC000B3FA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1423B1A8B3ACC000B3FA9 /* AppDelegate.m */; };
-		1EB1423F1A8B3ACC000B3FA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1423E1A8B3ACC000B3FA9 /* ViewController.m */; };
 		1EB142421A8B3ACC000B3FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB142401A8B3ACC000B3FA9 /* Main.storyboard */; };
 		1EB142441A8B3ACC000B3FA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB142431A8B3ACC000B3FA9 /* Images.xcassets */; };
 		1EB142471A8B3ACC000B3FA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB142451A8B3ACC000B3FA9 /* LaunchScreen.xib */; };
@@ -30,13 +39,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4951B31A8DCCE600AA73CD /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		1E4951B41A8DCCE600AA73CD /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		1E4951B51A8DCCE600AA73CD /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		1E4951B61A8DCCE600AA73CD /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		1E4951B71A8DCCE600AA73CD /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		1E4951B81A8DCCE600AA73CD /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		1E4951BC1A8DCEB000AA73CD /* LeftMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftMenu.png; sourceTree = "<group>"; };
+		1E4951BF1A8DCF3700AA73CD /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		1E4951C01A8DCF3700AA73CD /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		1E4951C21A8DCFA100AA73CD /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		1E4951C31A8DCFA100AA73CD /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		1E4951C51A8DD0D600AA73CD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1E4951C61A8DD0D600AA73CD /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1E4951C81A8DD15C00AA73CD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1E4951C91A8DD15C00AA73CD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1E4951CB1A8DD56400AA73CD /* RightMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightMenu.png; sourceTree = "<group>"; };
+		1E4951CD1A8DD60500AA73CD /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
+		1E4951CE1A8DD60500AA73CD /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
 		1EB142331A8B3ACC000B3FA9 /* iMEUM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMEUM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB142371A8B3ACC000B3FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EB142381A8B3ACC000B3FA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EB1423A1A8B3ACC000B3FA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1EB1423B1A8B3ACC000B3FA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1EB1423D1A8B3ACC000B3FA9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1EB1423E1A8B3ACC000B3FA9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1EB142411A8B3ACC000B3FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EB142431A8B3ACC000B3FA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1EB142461A8B3ACC000B3FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -68,6 +93,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4951B11A8DCC0700AA73CD /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				1E4951B21A8DCCE600AA73CD /* RESideMenu */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		1E4951B21A8DCCE600AA73CD /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1E4951B31A8DCCE600AA73CD /* RECommonFunctions.h */,
+				1E4951B41A8DCCE600AA73CD /* RECommonFunctions.m */,
+				1E4951B51A8DCCE600AA73CD /* RESideMenu.h */,
+				1E4951B61A8DCCE600AA73CD /* RESideMenu.m */,
+				1E4951B71A8DCCE600AA73CD /* UIViewController+RESideMenu.h */,
+				1E4951B81A8DCCE600AA73CD /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		1E4951BE1A8DCF0E00AA73CD /* GWClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1E4951BF1A8DCF3700AA73CD /* FirstViewController.h */,
+				1E4951C01A8DCF3700AA73CD /* FirstViewController.m */,
+				1E4951C21A8DCFA100AA73CD /* LeftMenuViewController.h */,
+				1E4951C31A8DCFA100AA73CD /* LeftMenuViewController.m */,
+				1E4951C51A8DD0D600AA73CD /* SecondViewController.h */,
+				1E4951C61A8DD0D600AA73CD /* SecondViewController.m */,
+				1E4951C81A8DD15C00AA73CD /* RootViewController.h */,
+				1E4951C91A8DD15C00AA73CD /* RootViewController.m */,
+				1E4951CD1A8DD60500AA73CD /* RightMenuViewController.h */,
+				1E4951CE1A8DD60500AA73CD /* RightMenuViewController.m */,
+			);
+			path = GWClasses;
+			sourceTree = "<group>";
+		};
 		1EB1422A1A8B3ACC000B3FA9 = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +152,12 @@
 		1EB142351A8B3ACC000B3FA9 /* iMEUM */ = {
 			isa = PBXGroup;
 			children = (
+				1E4951BE1A8DCF0E00AA73CD /* GWClasses */,
+				1E4951B11A8DCC0700AA73CD /* 3rd */,
 				1EDBD1021A8CABD600DB5FDB /* Resources */,
 				1EDBD0FA1A8CAA9300DB5FDB /* LoiLib */,
 				1EB1423A1A8B3ACC000B3FA9 /* AppDelegate.h */,
 				1EB1423B1A8B3ACC000B3FA9 /* AppDelegate.m */,
-				1EB1423D1A8B3ACC000B3FA9 /* ViewController.h */,
-				1EB1423E1A8B3ACC000B3FA9 /* ViewController.m */,
 				1EB142401A8B3ACC000B3FA9 /* Main.storyboard */,
 				1EB142431A8B3ACC000B3FA9 /* Images.xcassets */,
 				1EB142451A8B3ACC000B3FA9 /* LaunchScreen.xib */,
@@ -159,6 +222,8 @@
 		1EDBD1031A8CABD600DB5FDB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1E4951CB1A8DD56400AA73CD /* RightMenu.png */,
+				1E4951BC1A8DCEB000AA73CD /* LeftMenu.png */,
 				1EDBD1041A8CABD600DB5FDB /* Phone.png */,
 			);
 			path = Images;
@@ -245,8 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EB142421A8B3ACC000B3FA9 /* Main.storyboard in Resources */,
+				1E4951CC1A8DD56400AA73CD /* RightMenu.png in Resources */,
 				1EB142471A8B3ACC000B3FA9 /* LaunchScreen.xib in Resources */,
 				1EDBD1051A8CABD600DB5FDB /* Phone.png in Resources */,
+				1E4951BD1A8DCEB000AA73CD /* LeftMenu.png in Resources */,
 				1EB142441A8B3ACC000B3FA9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,10 +333,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EDBD1001A8CAAA900DB5FDB /* BAENTabItem.m in Sources */,
-				1EB1423F1A8B3ACC000B3FA9 /* ViewController.m in Sources */,
+				1E4951C11A8DCF3700AA73CD /* FirstViewController.m in Sources */,
+				1E4951CA1A8DD15C00AA73CD /* RootViewController.m in Sources */,
+				1E4951BB1A8DCCE600AA73CD /* UIViewController+RESideMenu.m in Sources */,
+				1E4951B91A8DCCE600AA73CD /* RECommonFunctions.m in Sources */,
 				1EDBD1011A8CAAA900DB5FDB /* BAENTabView.m in Sources */,
+				1E4951CF1A8DD60500AA73CD /* RightMenuViewController.m in Sources */,
 				1EB1423C1A8B3ACC000B3FA9 /* AppDelegate.m in Sources */,
 				1EB142391A8B3ACC000B3FA9 /* main.m in Sources */,
+				1E4951C71A8DD0D600AA73CD /* SecondViewController.m in Sources */,
+				1E4951C41A8DCFA100AA73CD /* LeftMenuViewController.m in Sources */,
+				1E4951BA1A8DCCE600AA73CD /* RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
