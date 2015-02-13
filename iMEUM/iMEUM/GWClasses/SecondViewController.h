@@ -11,6 +11,4 @@
 
 @interface SecondViewController : UIViewController
 
-- (IBAction)pushViewController:(id)sender;
-
 @end

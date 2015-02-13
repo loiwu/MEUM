@@ -9,6 +9,16 @@
 #import "ThirdViewController.h"
 #import "CTest1.h"
 
+static NSString *const TableViewCellIdentifier = @"TableViewCell";
+
+typedef enum {
+    TableViewRowTest1 = 0,
+//    TableViewRowTest2,
+//    TableViewRowTest3,
+//    TableViewRowTest4,
+    TableViewRowCount
+} TableViewRow;
+
 @interface ThirdViewController ()
 
 @end
@@ -20,12 +30,67 @@
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)pushViewController:(id)sender
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    return TableViewRowCount;
+    
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    CTest1 *viewController = [[CTest1 alloc] init];
-    viewController.title = @"Pushed Controller";
-    viewController.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController pushViewController:viewController animated:YES];
+    if (indexPath.row == TableViewRowTest1) {
+        cell.textLabel.text = NSLocalizedString(@"C Test 1", nil);
+        //cell.imageView.image = [UIImage imageNamed:@"facebook"];
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 45.0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = nil;
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableViewCellIdentifier];
+
+    cell.textLabel.font = [UIFont fontWithName:@"Avenir-Light" size:18];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    [self configureCell:cell atIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return @"IMEUM - C Tests";
+    }
+    
+    return nil;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    if (section == 0) {
+        return [NSString stringWithFormat:@"iMEUM\nversion %@ build %@.", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
+    }
+    
+    return nil;
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    //Class controllerClass;
+    if (indexPath.row == TableViewRowTest1) {
+        CTest1 *cTest1 = [[CTest1 alloc] init];
+        [self.navigationController pushViewController:cTest1 animated:YES];
+    }
 }
 
 @end

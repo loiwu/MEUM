@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
 
-@interface ThirdViewController : UIViewController
-
-- (IBAction)pushViewController:(id)sender;
+@interface ThirdViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

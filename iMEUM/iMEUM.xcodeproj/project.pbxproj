@@ -17,6 +17,11 @@
 		1E1A2E2B1A8DE281008368F0 /* CTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A2E2A1A8DE281008368F0 /* CTest1.m */; };
 		1E1A2E2E1A8DE401008368F0 /* CCodeViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A2E2D1A8DE401008368F0 /* CCodeViewerVC.m */; };
 		1E1A2E311A8DE466008368F0 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1A2E301A8DE466008368F0 /* ThirdViewController.m */; };
+		1E1A2E331A8DEB64008368F0 /* Robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1A2E321A8DEB64008368F0 /* Robot.png */; };
+		1E435D7D1A8DF7630030523A /* Materials.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E435D7C1A8DF7630030523A /* Materials.m */; };
+		1E435D831A8DF9300030523A /* SyntaxHighlightTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E435D801A8DF9300030523A /* SyntaxHighlightTextStorage.m */; };
+		1E435D841A8DF9300030523A /* TimeIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E435D821A8DF9300030523A /* TimeIndicatorView.m */; };
+		1E435D881A8DFB410030523A /* UIColor+Colorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E435D871A8DFB410030523A /* UIColor+Colorful.m */; };
 		1E4951B91A8DCCE600AA73CD /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951B41A8DCCE600AA73CD /* RECommonFunctions.m */; };
 		1E4951BA1A8DCCE600AA73CD /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951B61A8DCCE600AA73CD /* RESideMenu.m */; };
 		1E4951BB1A8DCCE600AA73CD /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951B81A8DCCE600AA73CD /* UIViewController+RESideMenu.m */; };
@@ -67,6 +72,15 @@
 		1E1A2E2D1A8DE401008368F0 /* CCodeViewerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCodeViewerVC.m; sourceTree = "<group>"; };
 		1E1A2E2F1A8DE466008368F0 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		1E1A2E301A8DE466008368F0 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		1E1A2E321A8DEB64008368F0 /* Robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Robot.png; sourceTree = "<group>"; };
+		1E435D7B1A8DF7630030523A /* Materials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Materials.h; sourceTree = "<group>"; };
+		1E435D7C1A8DF7630030523A /* Materials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Materials.m; sourceTree = "<group>"; };
+		1E435D7F1A8DF9300030523A /* SyntaxHighlightTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighlightTextStorage.h; sourceTree = "<group>"; };
+		1E435D801A8DF9300030523A /* SyntaxHighlightTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighlightTextStorage.m; sourceTree = "<group>"; };
+		1E435D811A8DF9300030523A /* TimeIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIndicatorView.h; sourceTree = "<group>"; };
+		1E435D821A8DF9300030523A /* TimeIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIndicatorView.m; sourceTree = "<group>"; };
+		1E435D861A8DFB410030523A /* UIColor+Colorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colorful.h"; sourceTree = "<group>"; };
+		1E435D871A8DFB410030523A /* UIColor+Colorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colorful.m"; sourceTree = "<group>"; };
 		1E4951B31A8DCCE600AA73CD /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		1E4951B41A8DCCE600AA73CD /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		1E4951B51A8DCCE600AA73CD /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -164,6 +178,35 @@
 			path = CTests;
 			sourceTree = "<group>";
 		};
+		1E435D7A1A8DF74A0030523A /* TalkMaterials */ = {
+			isa = PBXGroup;
+			children = (
+				1E435D7B1A8DF7630030523A /* Materials.h */,
+				1E435D7C1A8DF7630030523A /* Materials.m */,
+			);
+			path = TalkMaterials;
+			sourceTree = "<group>";
+		};
+		1E435D7E1A8DF9300030523A /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				1E435D7F1A8DF9300030523A /* SyntaxHighlightTextStorage.h */,
+				1E435D801A8DF9300030523A /* SyntaxHighlightTextStorage.m */,
+				1E435D811A8DF9300030523A /* TimeIndicatorView.h */,
+				1E435D821A8DF9300030523A /* TimeIndicatorView.m */,
+			);
+			path = CoreText;
+			sourceTree = "<group>";
+		};
+		1E435D851A8DFB410030523A /* UIKit+Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1E435D861A8DFB410030523A /* UIColor+Colorful.h */,
+				1E435D871A8DFB410030523A /* UIColor+Colorful.m */,
+			);
+			path = "UIKit+Custom";
+			sourceTree = "<group>";
+		};
 		1E4951B11A8DCC0700AA73CD /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +232,7 @@
 		1E4951BE1A8DCF0E00AA73CD /* GWClasses */ = {
 			isa = PBXGroup;
 			children = (
+				1E435D7A1A8DF74A0030523A /* TalkMaterials */,
 				1E1A2E281A8DE268008368F0 /* CTests */,
 				1E1A2E0D1A8DD998008368F0 /* Menus */,
 				1E4951BF1A8DCF3700AA73CD /* FirstViewController.h */,
@@ -267,6 +311,8 @@
 		1EDBD0FA1A8CAA9300DB5FDB /* LoiLib */ = {
 			isa = PBXGroup;
 			children = (
+				1E435D851A8DFB410030523A /* UIKit+Custom */,
+				1E435D7E1A8DF9300030523A /* CoreText */,
 				1EDBD0FB1A8CAAA900DB5FDB /* Tabs */,
 			);
 			path = LoiLib;
@@ -294,6 +340,7 @@
 		1EDBD1031A8CABD600DB5FDB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1E1A2E321A8DEB64008368F0 /* Robot.png */,
 				1E4951CB1A8DD56400AA73CD /* RightMenu.png */,
 				1E4951BC1A8DCEB000AA73CD /* LeftMenu.png */,
 				1EDBD1041A8CABD600DB5FDB /* Phone.png */,
@@ -311,6 +358,7 @@
 				1EB1422F1A8B3ACC000B3FA9 /* Sources */,
 				1EB142301A8B3ACC000B3FA9 /* Frameworks */,
 				1EB142311A8B3ACC000B3FA9 /* Resources */,
+				1E435D791A8DF56D0030523A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -382,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EB142421A8B3ACC000B3FA9 /* Main.storyboard in Resources */,
+				1E1A2E331A8DEB64008368F0 /* Robot.png in Resources */,
 				1E4951CC1A8DD56400AA73CD /* RightMenu.png in Resources */,
 				1EB142471A8B3ACC000B3FA9 /* LaunchScreen.xib in Resources */,
 				1EDBD1051A8CABD600DB5FDB /* Phone.png in Resources */,
@@ -399,6 +448,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E435D791A8DF56D0030523A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION != Release ]; then\necho \"Bumping build number...\"\nplist=${PROJECT_DIR}/${INFOPLIST_FILE}\n\n#increment the build number (ie 115 to 116)\nbuildnum=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${plist}\")\nif [[ \"${buildnum}\" == \"\" ]]; then\necho \"No build number in $plist\"\nexit 2\nfi\n\nbuildnum=$(expr $buildnum + 0001)\n/usr/libexec/Plistbuddy -c \"Set CFBundleVersion $buildnum\" \"${plist}\"\necho \"Bumped build number to $buildnum\"\n\nelse\necho $CONFIGURATION \" build - Not bumping build number.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1EB1422F1A8B3ACC000B3FA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -408,11 +473,14 @@
 				1E1A2E1F1A8DE01B008368F0 /* CYRTextStorage.m in Sources */,
 				1EDBD1001A8CAAA900DB5FDB /* BAENTabItem.m in Sources */,
 				1E1A2E2B1A8DE281008368F0 /* CTest1.m in Sources */,
+				1E435D831A8DF9300030523A /* SyntaxHighlightTextStorage.m in Sources */,
 				1E4951C11A8DCF3700AA73CD /* FirstViewController.m in Sources */,
 				1E1A2E211A8DE01B008368F0 /* CYRToken.m in Sources */,
 				1E1A2E311A8DE466008368F0 /* ThirdViewController.m in Sources */,
 				1E4951CA1A8DD15C00AA73CD /* RootViewController.m in Sources */,
+				1E435D841A8DF9300030523A /* TimeIndicatorView.m in Sources */,
 				1E4951BB1A8DCCE600AA73CD /* UIViewController+RESideMenu.m in Sources */,
+				1E435D881A8DFB410030523A /* UIColor+Colorful.m in Sources */,
 				1E1A2E1E1A8DE01B008368F0 /* CYRLayoutManager.m in Sources */,
 				1E4951B91A8DCCE600AA73CD /* RECommonFunctions.m in Sources */,
 				1EDBD1011A8CAAA900DB5FDB /* BAENTabView.m in Sources */,
@@ -421,6 +489,7 @@
 				1E1A2E2E1A8DE401008368F0 /* CCodeViewerVC.m in Sources */,
 				1E1A2E201A8DE01B008368F0 /* CYRTextView.m in Sources */,
 				1EB142391A8B3ACC000B3FA9 /* main.m in Sources */,
+				1E435D7D1A8DF7630030523A /* Materials.m in Sources */,
 				1E4951C71A8DD0D600AA73CD /* SecondViewController.m in Sources */,
 				1E1A2E241A8DE02A008368F0 /* QEDTextView.m in Sources */,
 				1E4951BA1A8DCCE600AA73CD /* RESideMenu.m in Sources */,
