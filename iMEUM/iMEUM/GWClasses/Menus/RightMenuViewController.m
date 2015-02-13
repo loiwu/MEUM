@@ -1,29 +1,30 @@
 //
-//  LeftMenuViewController.m
+//  RightMenuViewController.m
 //  iMEUM
 //
 //  Created by loi on 2/13/15.
 //  Copyright (c) 2015 GWrabbit. All rights reserved.
 //
 
-#import "LeftMenuViewController.h"
+#import "RightMenuViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
-#import "UIViewController+RESideMenu.h"
+#import "LeftMenuViewController.h"
+#import "CTest1.h"
 
-@interface LeftMenuViewController ()
+@interface RightMenuViewController ()
 
 @property (strong, readwrite, nonatomic) UITableView *tableView;
 
 @end
 
-@implementation LeftMenuViewController
+@implementation RightMenuViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
     self.tableView = ({
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 3) / 2.0f, self.view.frame.size.width, 54 * 3) style:UITableViewStylePlain];
         tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
         tableView.delegate = self;
         tableView.dataSource = self;
@@ -32,7 +33,6 @@
         tableView.backgroundView = nil;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         tableView.bounces = NO;
-        tableView.scrollsToTop = NO;
         tableView;
     });
     [self.view addSubview:self.tableView];
@@ -52,6 +52,11 @@
             break;
         case 1:
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"secondViewController"]]
+                                                         animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
+        case 2:
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"thirdViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
@@ -75,7 +80,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 5;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -93,13 +98,11 @@
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
     
-    NSArray *titles = @[@"Home", @"Calendar", @"Profile", @"Settings", @"Log Out"];
-    NSArray *images = @[@"IconHome", @"IconCalendar", @"IconProfile", @"IconSettings", @"IconEmpty"];
+    NSArray *titles = @[@"iMEUM", @"Talk Materials", @"C Tests"];
     cell.textLabel.text = titles[indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
+    cell.textLabel.textAlignment = NSTextAlignmentRight;
     
     return cell;
 }
-
 
 @end

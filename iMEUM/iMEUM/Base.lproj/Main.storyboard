@@ -36,6 +36,7 @@
                     <connections>
                         <segue destination="Sjh-dA-wLx" kind="relationship" relationship="rootViewController" id="zi6-gM-cee"/>
                         <segue destination="e2D-X8-zpz" kind="show" identifier="Second" id="Z4H-0T-jnK"/>
+                        <segue destination="OFd-TN-akS" kind="show" identifier="Third" id="ZXb-Lm-vop"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg6-uG-n8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,6 +101,48 @@
             </objects>
             <point key="canvasLocation" x="793" y="887"/>
         </scene>
+        <!--C Tests-->
+        <scene sceneID="8sP-VW-z6F">
+            <objects>
+                <viewController restorationIdentifier="thirdViewController" storyboardIdentifier="thirdViewController" id="OFd-TN-akS" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6rN-Ia-yNF"/>
+                        <viewControllerLayoutGuide type="bottom" id="0OO-ea-uSk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TAW-5e-ipu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9I-Ta-yKB">
+                                <rect key="frame" x="180" y="204" width="162" height="30"/>
+                                <state key="normal" title="Push View Controller">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushViewController:" destination="e2D-X8-zpz" eventType="touchUpInside" id="8vD-we-Tnv"/>
+                                    <action selector="pushViewController:" destination="OFd-TN-akS" eventType="touchUpInside" id="lWB-VN-dZg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="C Tests" id="t5P-hW-VTT">
+                        <barButtonItem key="leftBarButtonItem" image="LeftMenu.png" id="A9z-vB-Jub">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="e2D-X8-zpz" id="bpG-JO-RWL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="RightMenu.png" id="mGx-EV-r11">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="e2D-X8-zpz" id="Y5v-yT-nX3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpP-YI-ztj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="823"/>
+        </scene>
         <!--Right Menu View Controller-->
         <scene sceneID="vHB-HZ-0Lb">
             <objects>
@@ -157,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldS-3V-kDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1850" y="935"/>
+            <point key="canvasLocation" x="2010" y="823"/>
         </scene>
     </scenes>
     <resources>
