@@ -44,7 +44,7 @@ typedef enum {
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == TableViewRowTest1) {
-        cell.textLabel.text = NSLocalizedString(@"Material 1", nil);
+        cell.textLabel.text = NSLocalizedString(@"Setting Up A Speech Databank", nil);
         //cell.imageView.image = [UIImage imageNamed:@"facebook"];
     }
 }
@@ -88,7 +88,7 @@ typedef enum {
     
     //Class controllerClass;
     if (indexPath.row == TableViewRowTest1) {
-        Materials *vc1 = [[Materials alloc] initWithTitle:@"Material 1"];
+        Materials *vc1 = [[Materials alloc] initWithTitle:@"Setting Up A Speech Databank"];
         [self.navigationController pushViewController:vc1 animated:YES];
     }
 }
