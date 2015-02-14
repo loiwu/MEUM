@@ -45,7 +45,7 @@ typedef enum {
 {
     if (indexPath.row == TableViewRowTest1) {
         cell.textLabel.text = NSLocalizedString(@"弦截法求方程根", nil);
-        cell.imageView.image = [UIImage imageNamed:@"doc"];
+        cell.imageView.image = [UIImage imageNamed:@"Doc"];
     }
 }
 

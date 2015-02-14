@@ -30,7 +30,6 @@
 		1E4951C71A8DD0D600AA73CD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951C61A8DD0D600AA73CD /* SecondViewController.m */; };
 		1E4951CA1A8DD15C00AA73CD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4951C91A8DD15C00AA73CD /* RootViewController.m */; };
 		1E4951CC1A8DD56400AA73CD /* RightMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4951CB1A8DD56400AA73CD /* RightMenu.png */; };
-		1E78FDC31A8E51F2003BE394 /* doc.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E78FDC21A8E51F2003BE394 /* doc.png */; };
 		1EB142391A8B3ACC000B3FA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB142381A8B3ACC000B3FA9 /* main.m */; };
 		1EB1423C1A8B3ACC000B3FA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1423B1A8B3ACC000B3FA9 /* AppDelegate.m */; };
 		1EB142421A8B3ACC000B3FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB142401A8B3ACC000B3FA9 /* Main.storyboard */; };
@@ -40,6 +39,8 @@
 		1EDBD1001A8CAAA900DB5FDB /* BAENTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBD0FD1A8CAAA900DB5FDB /* BAENTabItem.m */; };
 		1EDBD1011A8CAAA900DB5FDB /* BAENTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBD0FF1A8CAAA900DB5FDB /* BAENTabView.m */; };
 		1EDBD1051A8CABD600DB5FDB /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EDBD1041A8CABD600DB5FDB /* Phone.png */; };
+		D9F10A231A8F264C00A4133C /* Doc.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F10A221A8F264C00A4133C /* Doc.png */; };
+		D9F10A251A8F267600A4133C /* Chart.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F10A241A8F267600A4133C /* Chart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +97,6 @@
 		1E4951C81A8DD15C00AA73CD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		1E4951C91A8DD15C00AA73CD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		1E4951CB1A8DD56400AA73CD /* RightMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightMenu.png; sourceTree = "<group>"; };
-		1E78FDC21A8E51F2003BE394 /* doc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc.png; sourceTree = "<group>"; };
 		1EB142331A8B3ACC000B3FA9 /* iMEUM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMEUM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB142371A8B3ACC000B3FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EB142381A8B3ACC000B3FA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +113,8 @@
 		1EDBD0FE1A8CAAA900DB5FDB /* BAENTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAENTabView.h; sourceTree = "<group>"; };
 		1EDBD0FF1A8CAAA900DB5FDB /* BAENTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAENTabView.m; sourceTree = "<group>"; };
 		1EDBD1041A8CABD600DB5FDB /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
+		D9F10A221A8F264C00A4133C /* Doc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doc.png; sourceTree = "<group>"; };
+		D9F10A241A8F267600A4133C /* Chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,7 +344,8 @@
 		1EDBD1031A8CABD600DB5FDB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1E78FDC21A8E51F2003BE394 /* doc.png */,
+				D9F10A241A8F267600A4133C /* Chart.png */,
+				D9F10A221A8F264C00A4133C /* Doc.png */,
 				1E1A2E321A8DEB64008368F0 /* Robot.png */,
 				1E4951CB1A8DD56400AA73CD /* RightMenu.png */,
 				1E4951BC1A8DCEB000AA73CD /* LeftMenu.png */,
@@ -432,13 +435,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E78FDC31A8E51F2003BE394 /* doc.png in Resources */,
 				1EB142421A8B3ACC000B3FA9 /* Main.storyboard in Resources */,
 				1E1A2E331A8DEB64008368F0 /* Robot.png in Resources */,
+				D9F10A231A8F264C00A4133C /* Doc.png in Resources */,
 				1E4951CC1A8DD56400AA73CD /* RightMenu.png in Resources */,
 				1EB142471A8B3ACC000B3FA9 /* LaunchScreen.xib in Resources */,
 				1EDBD1051A8CABD600DB5FDB /* Phone.png in Resources */,
 				1E4951BD1A8DCEB000AA73CD /* LeftMenu.png in Resources */,
+				D9F10A251A8F267600A4133C /* Chart.png in Resources */,
 				1EB142441A8B3ACC000B3FA9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,7 +559,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -575,6 +579,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "eb72ef1f-91ff-4eff-9130-0b2bbea14af0";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -596,7 +601,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -609,6 +614,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "eb72ef1f-91ff-4eff-9130-0b2bbea14af0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

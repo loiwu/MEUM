@@ -12,10 +12,7 @@
 static NSString *const TableViewCellIdentifier = @"TableViewCell";
 
 typedef enum {
-    TableViewRowTest1 = 0,
-    //    TableViewRowTest2,
-    //    TableViewRowTest3,
-    //    TableViewRowTest4,
+    TableViewRowTopic = 0,
     TableViewRowCount
 } TableViewRow;
 
@@ -32,7 +29,7 @@ typedef enum {
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -43,10 +40,24 @@ typedef enum {
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == TableViewRowTest1) {
-        cell.textLabel.text = NSLocalizedString(@"Setting Up A Speech Databank", nil);
-        //cell.imageView.image = [UIImage imageNamed:@"facebook"];
+    switch ([indexPath section]) {
+        case 0:
+            if (indexPath.row == TableViewRowTopic) {
+                cell.textLabel.text = NSLocalizedString(@"The Ice Breaker", nil);
+                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+            }
+            break;
+        case 1:
+            if (indexPath.row == TableViewRowTopic) {
+                cell.textLabel.text = NSLocalizedString(@"Organize Your Speech", nil);
+                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+            }
+            break;
+            
+        default:
+            break;
     }
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,15 +76,22 @@ typedef enum {
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == 0) {
-        return @"IMEUM - Talk Materials";
+    switch (section) {
+        case 0:
+            return @"Project 1";
+            break;
+        case 1:
+            return @"Project 2";
+            break;
+        default:
+            break;
     }
     
     return nil;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-    if (section == 0) {
+    if (section == 1) {
         return [NSString stringWithFormat:@"iMEUM\nversion %@ build %@.", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
     }
     
@@ -87,9 +105,21 @@ typedef enum {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     //Class controllerClass;
-    if (indexPath.row == TableViewRowTest1) {
-        Materials *vc1 = [[Materials alloc] initWithTitle:@"Setting Up A Speech Databank"];
-        [self.navigationController pushViewController:vc1 animated:YES];
+    switch ([indexPath section]) {
+        case 0:
+            if (indexPath.row == TableViewRowTopic) {
+                Materials *vc1 = [[Materials alloc] initWithTitle:@"The Ice Breaker"];
+                [self.navigationController pushViewController:vc1 animated:YES];
+            }
+            break;
+        case 1:
+            if (indexPath.row == TableViewRowTopic) {
+                Materials *vc1 = [[Materials alloc] initWithTitle:@"Organize Your Speech"];
+                [self.navigationController pushViewController:vc1 animated:YES];
+            }
+            break;
+        default:
+            break;
     }
 }
 
