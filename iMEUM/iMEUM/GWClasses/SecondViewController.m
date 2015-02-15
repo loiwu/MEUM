@@ -83,70 +83,70 @@ typedef enum {
         case 0:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Set up Speech Databank", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Deer1"];
             } else if (indexPath.row == TableViewRowMaterial1) {
                 cell.textLabel.text = NSLocalizedString(@"Program Assignment Guide", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Popsicle"];
             }
             break;
         case 1:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"The Ice Breaker", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Boom"];
             }
             break;
         case 2:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Organize Your Speech", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Car1"];
             }
             break;
         case 3:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Get to the Point", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"ToiletPaper"];
             }
             break;
         case 4:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"How to Say It", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Dropper"];
             }
             break;
         case 5:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Your Body Speaks", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Fire"];
             }
             break;
         case 6:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Vocal Variety", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Hand1"];
             }
             break;
         case 7:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Research Your Topic", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"MusicalNote"];
             }
             break;
         case 8:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Get Comfortable with Visual Aids", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Phantom"];
             }
             break;
         case 9:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Persuade with Power", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Tools"];
             }
             break;
         case 10:
             if (indexPath.row == TableViewRowTopic) {
                 cell.textLabel.text = NSLocalizedString(@"Inspire Your Audience", nil);
-                cell.imageView.image = [UIImage imageNamed:@"Chart"];
+                cell.imageView.image = [UIImage imageNamed:@"Car2"];
             }
             break;
             
