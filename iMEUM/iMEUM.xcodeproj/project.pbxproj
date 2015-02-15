@@ -631,7 +631,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "5dc4a6e7-382e-4ef9-9157-0e6e11c606bd";
+				PROVISIONING_PROFILE = "2d5d032a-ea6d-4ce6-b022-35f6cf23940d";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -666,7 +666,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "5dc4a6e7-382e-4ef9-9157-0e6e11c606bd";
+				PROVISIONING_PROFILE = "2d5d032a-ea6d-4ce6-b022-35f6cf23940d";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -675,8 +675,11 @@
 		1EB142571A8B3ACC000B3FA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = "Loi Wu";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = iMEUM/Info.plist;
+				INSTALL_OWNER = "Loi Wu";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -685,8 +688,11 @@
 		1EB142581A8B3ACC000B3FA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = "Loi Wu";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = iMEUM/Info.plist;
+				INSTALL_OWNER = "Loi Wu";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
