@@ -631,7 +631,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+<<<<<<< Updated upstream
 				PROVISIONING_PROFILE = "2d5d032a-ea6d-4ce6-b022-35f6cf23940d";
+=======
+				PROVISIONING_PROFILE = "839c5cf7-8771-45d6-8ccc-9b3f8b017082";
+>>>>>>> Stashed changes
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -666,7 +670,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+<<<<<<< Updated upstream
 				PROVISIONING_PROFILE = "2d5d032a-ea6d-4ce6-b022-35f6cf23940d";
+=======
+				PROVISIONING_PROFILE = "839c5cf7-8771-45d6-8ccc-9b3f8b017082";
+>>>>>>> Stashed changes
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -682,6 +690,7 @@
 				INSTALL_OWNER = "Loi Wu";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "839c5cf7-8771-45d6-8ccc-9b3f8b017082";
 			};
 			name = Debug;
 		};
@@ -695,6 +704,7 @@
 				INSTALL_OWNER = "Loi Wu";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "839c5cf7-8771-45d6-8ccc-9b3f8b017082";
 			};
 			name = Release;
 		};
@@ -713,6 +723,7 @@
 				INFOPLIST_FILE = iMEUMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "839c5cf7-8771-45d6-8ccc-9b3f8b017082";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMEUM.app/iMEUM";
 			};
 			name = Debug;
@@ -728,6 +739,7 @@
 				INFOPLIST_FILE = iMEUMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "839c5cf7-8771-45d6-8ccc-9b3f8b017082";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMEUM.app/iMEUM";
 			};
 			name = Release;

@@ -19,7 +19,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
+<<<<<<< Updated upstream
 	<string>78</string>
+=======
+	<string>90</string>
+>>>>>>> Stashed changes
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
